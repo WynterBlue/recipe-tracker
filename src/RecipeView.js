@@ -16,8 +16,8 @@ function RecipeView({recipeData, deleteRecipe}) {
             <td>
             <img alt={photo} src={photo} />
             </td>
-            <td>{ingredients}</td>
-            <td>{preparation}</td>
+            <td className="content_td"><p>{ingredients}</p></td>
+            <td className="content_td"><p>{preparation}</p></td>
             <td>
                 <button name="delete" onClick={handleDelete}>Delete</button>
             </td>
